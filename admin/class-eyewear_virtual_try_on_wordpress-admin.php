@@ -100,10 +100,9 @@ class Eyewear_virtual_try_on_wordpress_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
+		wp_enqueue_script('jquery');
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/eyewear_virtual_try_on_wordpress-admin.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( "load_core_function", plugin_dir_url( __FILE__ ) . 'js/load_core_function.js', $this->version, false );
-		wp_enqueue_script('jquery');
 		wp_enqueue_script('media-upload');
 		wp_enqueue_script('thickbox');
 		wp_enqueue_script('bootstrap-js', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', ['jquery']);

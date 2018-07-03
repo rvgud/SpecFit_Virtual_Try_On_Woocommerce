@@ -102,11 +102,17 @@ class Eyewear_virtual_try_on_wordpress_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
+		wp_enqueue_script('jquery');
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/eyewear_virtual_try_on_wordpress-public.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name.'htmtocanvas_tryon', plugin_dir_url( __FILE__ ) . 'js/html2canvas.min.js', array( 'jquery' ), $this->version, false );
         wp_enqueue_script( $this->plugin_name.'bootstrapjs', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js');
-        wp_enqueue_script( $this->plugin_name.'jqueryuijs', plugin_dir_url( __FILE__ ) . 'js/jquery-ui.js');
+        //wp_enqueue_script( $this->plugin_name.'jqueryuijs', plugin_dir_url( __FILE__ ) . 'js/jquery-ui.js');
+		wp_enqueue_script('jquery-ui-core');
+		wp_enqueue_script('jquery-ui-draggable');
+		wp_enqueue_script('jquery-ui-droppable');
+		wp_enqueue_script('jquery-ui-mouse');
+		wp_enqueue_script('jquery-ui-resizable');
+		wp_enqueue_script('jquery-ui-tooltip');
         wp_enqueue_script( $this->plugin_name.'jqueryuitouchjs', plugin_dir_url( __FILE__ ) . 'js/jquery.ui.touch-punch.min.js');
         wp_enqueue_script("load_core_functions", plugin_dir_url(__FILE__) . 'js/load_core_functions.js', false );
 
