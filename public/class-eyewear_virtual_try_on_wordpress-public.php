@@ -108,9 +108,9 @@ class Eyewear_virtual_try_on_wordpress_Public {
         wp_enqueue_script( $this->plugin_name.'bootstrapjs', plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js');
         //wp_enqueue_script( $this->plugin_name.'jqueryuijs', plugin_dir_url( __FILE__ ) . 'js/jquery-ui.js');
 		wp_enqueue_script('jquery-ui-core');
+		wp_enqueue_script('jquery-ui-mouse');
 		wp_enqueue_script('jquery-ui-draggable');
 		wp_enqueue_script('jquery-ui-droppable');
-		wp_enqueue_script('jquery-ui-mouse');
 		wp_enqueue_script('jquery-ui-resizable');
 		wp_enqueue_script('jquery-ui-tooltip');
         wp_enqueue_script( $this->plugin_name.'jqueryuitouchjs', plugin_dir_url( __FILE__ ) . 'js/jquery.ui.touch-punch.min.js');
