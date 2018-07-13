@@ -15,6 +15,7 @@ Vitual EyeWear Try-On SpecFit allows customers to virtually try eye wears produc
 == Description ==
 
 Vitual EyeWear Try-On SpecFit allows customers to virtually try eye wears products on their face before buying it.
+Wordpress Plugin Repository URL:- https://wordpress.org/plugins/try-on-for-woocommerce/
 
 == Installation ==
 
